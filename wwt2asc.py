@@ -51,28 +51,8 @@ def wwtasc(C_Nr=2,C_name='no name',C_value='100',C_timechannel='0',C_unit='N'):
     line_9 = Nr_channel  #9. Line: Number of channels
     line_10 = str_line10  #10. Line: Number of values for each channel
     line_11 = str_line11    #11. Line: X Channel number for each channel
-    line_12 = str_line12
-    
-    '''
-    '{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}'.format(\
-               'Displacement__001 [mm]',\
-               'Force_X_002 [N]',\
-               'Force_Y_003 [N]',	\
-               'Force_Z_004 [N]',\
-               'Time  2  [s]',\
-               'TRI-CAMERA_006 [V]',\
-               'ACC-X_007 [g]',	\
-               'ACC-Y_008 [g]',\
-               'ACC-Z_009 [g]',\
-               )  #12. Line: Name for each channel (17 signs per channel fixed)
-    '''
-    
-    line_13 = str_line13
-    
-    '''
-    '{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}{:>17.17}'.format('Nr','N','N','N','N','N','N')  #13. Line: Unit for each channel (17 signs per channel fixed)
-    '''
-    
+    line_12 = str_line12   
+    line_13 = str_line13   
     wwt.write('{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n'.format(line_1,line_2,line_3,line_4,line_5,line_6,line_7,line_8,line_9,line_10,line_11,line_12,line_13))               #该语句会写入先前定义好的 text
     for i in range(100):
         start = t.perf_counter()
